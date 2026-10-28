@@ -28,6 +28,21 @@ PRODUCT_NAME := lineage_stone
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+# Lunaris Flags
+LUNARIS_BUILD_TYPE := OFFICIAL
+WITH_GMS := false
+WITH_PIXEL_LAUNCHER := false
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+USE_REALITY_ENGINE := true
+WITH_GMS_COMMS_SUITE := false
+WITH_BCR := true
+
+# Lunaris Maintainer
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lunaris.maintainer=@Parvez52
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sunstone_global-user 14 UKQ1.240624.001 OS2.0.5.0.UMQMIXM release-keys" \
     BuildFingerprint=Redmi/sunstone_global/sunstone:14/UKQ1.240624.001/OS2.0.5.0.UMQMIXM:user/release-keys \

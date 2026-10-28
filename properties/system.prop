@@ -113,3 +113,7 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
 persist.vendor.radio.atfwd.start=true
+
+# Lunaris Maintainer
+ro.lunaris.maintainer=@Parvez52
+
