@@ -17,7 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-
+TARGET_DISABLE_EPPE := true
 TARGET_EXCLUDES_AUDIOFX := true
 
 # Axion Flags
