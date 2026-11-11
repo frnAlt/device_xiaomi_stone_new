@@ -101,6 +101,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
+# MIUI/Leica Camera
+$(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
+
 # Circle to Search support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/c2s/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml
