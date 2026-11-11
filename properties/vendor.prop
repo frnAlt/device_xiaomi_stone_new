@@ -3,10 +3,11 @@ persist.vendor.audio.ambisonic.auto.profile=false
 persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.avs.afe_api_version=2
-persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.speaker=false
 persist.vendor.audio.fluence.tmic.enabled=false
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecomm=false
+persist.vendor.audio.fluence.voicerec=true
 persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.ras.enabled=false
 persist.vendor.audio.ring.filter.mask=0
@@ -150,7 +151,7 @@ ro.vendor.bluetooth.wipower=false
 ro.surface_flinger.supports_background_blur=1
 
 # Display
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 ro.surface_flinger.enable_frame_rate_override=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_wide_color_display=true

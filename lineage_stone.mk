@@ -40,6 +40,11 @@ SURFACE_FLINGER_BOOST := true
 TARGET_SUPPORTED_REFRESH_RATES := 60,120
 WITH_GMS_COMMS_SUITE := false
 WITH_BCR := true
+TARGET_DISABLE_MATLOG := true
+
+# SurfaceFlinger frame rate categories for smooth 120Hz transitions
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # Lunaris Maintainer
 PRODUCT_SYSTEM_PROPERTIES += \
